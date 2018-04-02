@@ -1,0 +1,6 @@
+framework module Pods_Online_User_ManuelTests {
+  umbrella header "Pods-Online User ManuelTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
