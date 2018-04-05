@@ -16,6 +16,8 @@ class DriversGuideViewController: UIViewController {
     @IBOutlet weak var carGuideTableView: UITableView!
     
     var guideArray: [DriverGuide] = []
+    var model = "Ford Truck"
+    var type = "Kamyonlar"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +31,7 @@ class DriversGuideViewController: UIViewController {
     
     fileprivate func prepareNavigationBar(){
         
-        //navigationItem.title = guide.title
+        navigationItem.setTitle(title: type, subtitle: model)
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         
     }
@@ -92,6 +94,8 @@ class DriversGuideViewController: UIViewController {
         }
         
         guideCategoriesViewController.guide = guideArray[index]
+        guideCategoriesViewController.model = model
+        
         
         self.navigationController?.pushViewController(guideCategoriesViewController, animated: true)
         
