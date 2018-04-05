@@ -37,12 +37,12 @@ class DriversGuideViewController: UIViewController {
     
     fileprivate func createMenuItems(){
         
-        let item1 = DriverGuide(title: "Kullanım Kılavuzu", imageView: UIImage(named: "fordtruck")!, type: .kullanimkilavuzu)
-        let item2 = DriverGuide(title: "Animasyonlar", imageView: UIImage(named: "fordtruck")!, type: .anismasyonlar)
-        let item3 = DriverGuide(title: "Hızlı Bağlantılar", imageView: UIImage(named: "fordtruck")!, type: .hizlibaglantilar)
-        let item4 = DriverGuide(title: "Kontrol ve ikaz lambaları", imageView: UIImage(named: "fordtruck")!, type: .kontrolikaz)
-        let item5 = DriverGuide(title: "Sıkça Sorulan Sorular", imageView: UIImage(named: "fordtruck")!, type: .sss)
-        let item6 = DriverGuide(title: "Okuma Isareti", imageView: UIImage(named: "fordtruck")!, type: .okumaisareti)
+        let item1 = DriverGuide(title: "Kullanım Kılavuzu", imageView: UIImage(named: "kullanim")!, type: .kullanimkilavuzu)
+        let item2 = DriverGuide(title: "Animasyonlar", imageView: UIImage(named: "animasyon")!, type: .anismasyonlar)
+        let item3 = DriverGuide(title: "Hızlı Bağlantılar", imageView: UIImage(named: "hizlibaglanti")!, type: .hizlibaglantilar)
+        let item4 = DriverGuide(title: "Kontrol ve ikaz lambaları", imageView: UIImage(named: "kontrol")!, type: .kontrolikaz)
+        let item5 = DriverGuide(title: "Sıkça Sorulan Sorular", imageView: UIImage(named: "sss")!, type: .sss)
+        let item6 = DriverGuide(title: "Okuma Isareti", imageView: UIImage(named: "okuma")!, type: .okumaisareti)
         
         guideArray.append(item1)
         guideArray.append(item2)
