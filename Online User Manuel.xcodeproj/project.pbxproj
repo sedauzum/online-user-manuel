@@ -9,6 +9,18 @@
 /* Begin PBXBuildFile section */
 		2E4B20132658AC7A222B002F /* Pods_Online_User_Manuel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2508A241F43C515F11275252 /* Pods_Online_User_Manuel.framework */; };
 		31BCC27C7AB8514605195DFA /* Pods_Online_User_ManuelTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B25CC5466D9C813BD6D9A722 /* Pods_Online_User_ManuelTests.framework */; };
+		362E503A207359010008C883 /* DriversGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362E5039207359010008C883 /* DriversGuideViewController.swift */; };
+		362E503D207389360008C883 /* DriverGuideTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362E503B207389360008C883 /* DriverGuideTableViewCell.swift */; };
+		362E503E207389360008C883 /* DriverGuideTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 362E503C207389360008C883 /* DriverGuideTableViewCell.xib */; };
+		362E50402073950F0008C883 /* GuideCategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362E503F2073950F0008C883 /* GuideCategoriesViewController.swift */; };
+		362E50422073992C0008C883 /* DriverGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362E50412073992C0008C883 /* DriverGuide.swift */; };
+		364202842076318900011184 /* CategoryItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364202822076318900011184 /* CategoryItemTableViewCell.swift */; };
+		364202852076318900011184 /* CategoryItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 364202832076318900011184 /* CategoryItemTableViewCell.xib */; };
+		364202872076330300011184 /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364202862076330300011184 /* ItemDetailViewController.swift */; };
+		367F23A52075FE07009C1025 /* GuideCategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367F23A32075FE07009C1025 /* GuideCategoryTableViewCell.swift */; };
+		367F23A62075FE07009C1025 /* GuideCategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 367F23A42075FE07009C1025 /* GuideCategoryTableViewCell.xib */; };
+		367F23A8207611FB009C1025 /* CategoryItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367F23A7207611FB009C1025 /* CategoryItemViewController.swift */; };
+		367F5BCA2072644200DAC705 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 367F5BC92072644200DAC705 /* Menu.storyboard */; };
 		711AE2929A1CF0EED555B424 /* Pods_Online_User_ManuelUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3CAC9BDE01D0FC7EAC8A6F0 /* Pods_Online_User_ManuelUITests.framework */; };
 		88992978207218BB0023569E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88992977207218BB0023569E /* AppDelegate.swift */; };
 		8899297A207218BB0023569E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88992979207218BB0023569E /* ViewController.swift */; };
@@ -39,6 +51,18 @@
 
 /* Begin PBXFileReference section */
 		2508A241F43C515F11275252 /* Pods_Online_User_Manuel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Online_User_Manuel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		362E5039207359010008C883 /* DriversGuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriversGuideViewController.swift; sourceTree = "<group>"; };
+		362E503B207389360008C883 /* DriverGuideTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverGuideTableViewCell.swift; sourceTree = "<group>"; };
+		362E503C207389360008C883 /* DriverGuideTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DriverGuideTableViewCell.xib; sourceTree = "<group>"; };
+		362E503F2073950F0008C883 /* GuideCategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideCategoriesViewController.swift; sourceTree = "<group>"; };
+		362E50412073992C0008C883 /* DriverGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverGuide.swift; sourceTree = "<group>"; };
+		364202822076318900011184 /* CategoryItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemTableViewCell.swift; sourceTree = "<group>"; };
+		364202832076318900011184 /* CategoryItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryItemTableViewCell.xib; sourceTree = "<group>"; };
+		364202862076330300011184 /* ItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
+		367F23A32075FE07009C1025 /* GuideCategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideCategoryTableViewCell.swift; sourceTree = "<group>"; };
+		367F23A42075FE07009C1025 /* GuideCategoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GuideCategoryTableViewCell.xib; sourceTree = "<group>"; };
+		367F23A7207611FB009C1025 /* CategoryItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemViewController.swift; sourceTree = "<group>"; };
+		367F5BC92072644200DAC705 /* Menu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
 		84876E8CFCE93F8759D227FE /* Pods-Online User Manuel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Online User Manuel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Online User Manuel/Pods-Online User Manuel.debug.xcconfig"; sourceTree = "<group>"; };
 		877E00A99384F3871788FF5C /* Pods-Online User ManuelUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Online User ManuelUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Online User ManuelUITests/Pods-Online User ManuelUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		88992974207218BB0023569E /* Online User Manuel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Online User Manuel.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,9 +154,21 @@
 				88992977207218BB0023569E /* AppDelegate.swift */,
 				88992979207218BB0023569E /* ViewController.swift */,
 				8899297B207218BB0023569E /* Main.storyboard */,
+				367F5BC92072644200DAC705 /* Menu.storyboard */,
+				364202822076318900011184 /* CategoryItemTableViewCell.swift */,
+				364202832076318900011184 /* CategoryItemTableViewCell.xib */,
+				367F23A7207611FB009C1025 /* CategoryItemViewController.swift */,
+				362E50412073992C0008C883 /* DriverGuide.swift */,
+				364202862076330300011184 /* ItemDetailViewController.swift */,
+				362E503F2073950F0008C883 /* GuideCategoriesViewController.swift */,
+				362E503B207389360008C883 /* DriverGuideTableViewCell.swift */,
+				362E503C207389360008C883 /* DriverGuideTableViewCell.xib */,
+				362E5039207359010008C883 /* DriversGuideViewController.swift */,
 				8899297E207218BB0023569E /* Assets.xcassets */,
 				88992980207218BB0023569E /* LaunchScreen.storyboard */,
 				88992983207218BB0023569E /* Info.plist */,
+				367F23A32075FE07009C1025 /* GuideCategoryTableViewCell.swift */,
+				367F23A42075FE07009C1025 /* GuideCategoryTableViewCell.xib */,
 			);
 			path = "Online User Manuel";
 			sourceTree = "<group>";
@@ -240,7 +276,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "uzum & asıliskender";
 				TargetAttributes = {
 					88992973207218BB0023569E = {
@@ -284,9 +320,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				367F5BCA2072644200DAC705 /* Menu.storyboard in Resources */,
 				889929A6207219370023569E /* .gitignore in Resources */,
+				362E503E207389360008C883 /* DriverGuideTableViewCell.xib in Resources */,
+				367F23A62075FE07009C1025 /* GuideCategoryTableViewCell.xib in Resources */,
 				88992982207218BB0023569E /* LaunchScreen.storyboard in Resources */,
 				8899297F207218BB0023569E /* Assets.xcassets in Resources */,
+				364202852076318900011184 /* CategoryItemTableViewCell.xib in Resources */,
 				8899297D207218BB0023569E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -459,8 +499,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				364202872076330300011184 /* ItemDetailViewController.swift in Sources */,
 				8899297A207218BB0023569E /* ViewController.swift in Sources */,
+				364202842076318900011184 /* CategoryItemTableViewCell.swift in Sources */,
+				362E50402073950F0008C883 /* GuideCategoriesViewController.swift in Sources */,
+				362E50422073992C0008C883 /* DriverGuide.swift in Sources */,
 				88992978207218BB0023569E /* AppDelegate.swift in Sources */,
+				362E503D207389360008C883 /* DriverGuideTableViewCell.swift in Sources */,
+				362E503A207359010008C883 /* DriversGuideViewController.swift in Sources */,
+				367F23A8207611FB009C1025 /* CategoryItemViewController.swift in Sources */,
+				367F23A52075FE07009C1025 /* GuideCategoryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,6 +577,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -536,6 +585,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -586,6 +636,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -593,6 +644,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
