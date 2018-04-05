@@ -8,17 +8,37 @@
 
 import UIKit
 
+struct VehicleType {
+    
+    var name: String
+    var image: UIImage
+    
+    init(name: String, image: UIImage) {
+        self.name = name
+        self.image = image
+    }
+}
+
 class VehicleTypeViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    var shoppingList = ["elma", "armut", "ıspanak", "tursu"]
+    var vehicleTypeList: [VehicleType]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        prepareVehicleList()
         prepareNavigationItem()
         prepareTableView()
+        
+    }
+    
+    fileprivate func prepareVehicleList() {
+        let binekArac = VehicleType(name: "Binek Araç", image: UIImage(named: "fordfocuswhite")!)
+        let ticariArac = VehicleType(name:"Ticari Araç", image: UIImage(named: "fordtourneocustom")! )
+        let kamyonlar = VehicleType(name: "Kamyonlar", image: UIImage(named: "fordcargo")! )
+        vehicleTypeList = [binekArac,ticariArac,kamyonlar]
         
     }
     
@@ -47,14 +67,15 @@ extension VehicleTypeViewController: UITableViewDelegate, UITableViewDataSource 
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return shoppingList.count
+        return vehicleTypeList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell: VehicleTypeTableViewCell = tableView.dequeueReusableCell(withIdentifier: "VehicleTypeTableViewCell") as! VehicleTypeTableViewCell
         
-        cell.vehicleTypeLabel.text = shoppingList[indexPath.row]
+        cell.vehicleTypeLabel.text = vehicleTypeList[indexPath.row].name
+        cell.vehicleTypeImage.image = vehicleTypeList[indexPath.row].image
         
         return cell
         
