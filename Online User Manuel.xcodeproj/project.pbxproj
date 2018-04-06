@@ -10,6 +10,7 @@
 		2E4B20132658AC7A222B002F /* Pods_Online_User_Manuel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2508A241F43C515F11275252 /* Pods_Online_User_Manuel.framework */; };
 		31BCC27C7AB8514605195DFA /* Pods_Online_User_ManuelTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B25CC5466D9C813BD6D9A722 /* Pods_Online_User_ManuelTests.framework */; };
 		711AE2929A1CF0EED555B424 /* Pods_Online_User_ManuelUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3CAC9BDE01D0FC7EAC8A6F0 /* Pods_Online_User_ManuelUITests.framework */; };
+		88092BC6207782B7004B4370 /* TruckCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88092BC5207782B7004B4370 /* TruckCollectionViewController.swift */; };
 		887FC63720760FBB002515CA /* VehicleTypeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887FC63620760FBB002515CA /* VehicleTypeTableViewCell.swift */; };
 		887FC639207612C4002515CA /* VehicleTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887FC638207612C4002515CA /* VehicleTypeViewController.swift */; };
 		88992978207218BB0023569E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88992977207218BB0023569E /* AppDelegate.swift */; };
@@ -22,6 +23,8 @@
 		889929A6207219370023569E /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 889929A5207219370023569E /* .gitignore */; };
 		889929A8207359180023569E /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889929A7207359180023569E /* File.swift */; };
 		889929AC207368FB0023569E /* VehicleTypeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 889929AA207368FB0023569E /* VehicleTypeTableViewCell.xib */; };
+		88D5F1562077A2D900518EFC /* TruckCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D5F1542077A2D900518EFC /* TruckCollectionViewCell.swift */; };
+		88D5F1572077A2D900518EFC /* TruckCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88D5F1552077A2D900518EFC /* TruckCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,7 @@
 		2508A241F43C515F11275252 /* Pods_Online_User_Manuel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Online_User_Manuel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84876E8CFCE93F8759D227FE /* Pods-Online User Manuel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Online User Manuel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Online User Manuel/Pods-Online User Manuel.debug.xcconfig"; sourceTree = "<group>"; };
 		877E00A99384F3871788FF5C /* Pods-Online User ManuelUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Online User ManuelUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Online User ManuelUITests/Pods-Online User ManuelUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		88092BC5207782B7004B4370 /* TruckCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruckCollectionViewController.swift; sourceTree = "<group>"; };
 		887FC63620760FBB002515CA /* VehicleTypeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleTypeTableViewCell.swift; sourceTree = "<group>"; };
 		887FC638207612C4002515CA /* VehicleTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleTypeViewController.swift; sourceTree = "<group>"; };
 		88992974207218BB0023569E /* Online User Manuel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Online User Manuel.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +67,8 @@
 		889929A5207219370023569E /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		889929A7207359180023569E /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		889929AA207368FB0023569E /* VehicleTypeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VehicleTypeTableViewCell.xib; sourceTree = "<group>"; };
+		88D5F1542077A2D900518EFC /* TruckCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruckCollectionViewCell.swift; sourceTree = "<group>"; };
+		88D5F1552077A2D900518EFC /* TruckCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TruckCollectionViewCell.xib; sourceTree = "<group>"; };
 		A3CAC9BDE01D0FC7EAC8A6F0 /* Pods_Online_User_ManuelUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Online_User_ManuelUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A45577742A62352B20EA8CDD /* Pods-Online User ManuelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Online User ManuelTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Online User ManuelTests/Pods-Online User ManuelTests.release.xcconfig"; sourceTree = "<group>"; };
 		A5B1380F532979EDB3C0D9FE /* Pods-Online User ManuelUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Online User ManuelUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Online User ManuelUITests/Pods-Online User ManuelUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -136,8 +142,11 @@
 			isa = PBXGroup;
 			children = (
 				88992977207218BB0023569E /* AppDelegate.swift */,
+				88D5F1542077A2D900518EFC /* TruckCollectionViewCell.swift */,
+				88D5F1552077A2D900518EFC /* TruckCollectionViewCell.xib */,
 				88992979207218BB0023569E /* ViewController.swift */,
 				8899297B207218BB0023569E /* Main.storyboard */,
+				88092BC5207782B7004B4370 /* TruckCollectionViewController.swift */,
 				887FC638207612C4002515CA /* VehicleTypeViewController.swift */,
 				887FC63620760FBB002515CA /* VehicleTypeTableViewCell.swift */,
 				889929AA207368FB0023569E /* VehicleTypeTableViewCell.xib */,
@@ -296,6 +305,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88D5F1572077A2D900518EFC /* TruckCollectionViewCell.xib in Resources */,
 				889929A6207219370023569E /* .gitignore in Resources */,
 				889929AC207368FB0023569E /* VehicleTypeTableViewCell.xib in Resources */,
 				88992982207218BB0023569E /* LaunchScreen.storyboard in Resources */,
@@ -474,9 +484,11 @@
 			files = (
 				887FC639207612C4002515CA /* VehicleTypeViewController.swift in Sources */,
 				8899297A207218BB0023569E /* ViewController.swift in Sources */,
+				88092BC6207782B7004B4370 /* TruckCollectionViewController.swift in Sources */,
 				889929A8207359180023569E /* File.swift in Sources */,
 				887FC63720760FBB002515CA /* VehicleTypeTableViewCell.swift in Sources */,
 				88992978207218BB0023569E /* AppDelegate.swift in Sources */,
+				88D5F1562077A2D900518EFC /* TruckCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -644,6 +656,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 85RTUG4FG7;
 				INFOPLIST_FILE = "Online User Manuel/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "uzum---as-liskender.Online-User-Manuel";
@@ -659,6 +672,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 85RTUG4FG7;
 				INFOPLIST_FILE = "Online User Manuel/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "uzum---as-liskender.Online-User-Manuel";

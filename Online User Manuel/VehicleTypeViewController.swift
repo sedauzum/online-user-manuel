@@ -24,7 +24,7 @@ class VehicleTypeViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var vehicleTypeList: [VehicleType]!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -33,11 +33,21 @@ class VehicleTypeViewController: UIViewController {
         prepareTableView()
         
     }
+
+    func showDetail(_ index: Int) {
+        let storyboard  = UIStoryboard(name:"Main", bundle:nil)
+        guard let truckCollectionViewController = storyboard.instantiateViewController(withIdentifier: "TruckCollectionViewController") as? TruckCollectionViewController else {
+            return
+        }
+        //movieDet.myMovie = movieArray[index]
+        self.navigationController?.pushViewController(truckCollectionViewController, animated: true)
+    }
     
     fileprivate func prepareVehicleList() {
         let binekArac = VehicleType(name: "Binek Araç", image: UIImage(named: "fordfocuswhite")!)
         let ticariArac = VehicleType(name:"Ticari Araç", image: UIImage(named: "fordtourneocustom")! )
-        let kamyonlar = VehicleType(name: "Kamyonlar", image: UIImage(named: "fordcargo")! )
+        let kamyonImg = UIImage(named: "fordcargo")!
+        let kamyonlar = VehicleType(name: "Kamyonlar", image: UIImage(cgImage: kamyonImg.cgImage!, scale: 1.0, orientation: UIImageOrientation.upMirrored ))
         vehicleTypeList = [binekArac,ticariArac,kamyonlar]
         
     }
@@ -82,8 +92,14 @@ extension VehicleTypeViewController: UITableViewDelegate, UITableViewDataSource 
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let index = indexPath.row
+        showDetail(index)
+        tableView.deselectRow(at: indexPath, animated: true)
         
-        
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 200
     }
     
 }
