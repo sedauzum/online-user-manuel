@@ -88,18 +88,46 @@ class DriversGuideViewController: UIViewController {
     func showDetail(ofGuideAt index: Int){
         
         let storyboard = UIStoryboard(name: "Menu", bundle: nil)
+  
         
-        guard let guideCategoriesViewController = storyboard.instantiateViewController(withIdentifier: "GuideCategoriesViewController") as? GuideCategoriesViewController else {
-            return
+        let type = guideArray[index].type
+        
+        switch type {
+            
+        case .kontrolikaz:
+            guard let controlWarningViewController = storyboard.instantiateViewController(withIdentifier: "ControlWarningViewController") as? ControlWarningViewController else {
+                return
+            }
+            //controlWarningViewController.guide = guideArray[index]
+            //controlWarningViewController.model = model
+            self.navigationController?.pushViewController(controlWarningViewController, animated: true)
+            
+        case .okumaisareti:
+            
+            guard let bookmarkViewController = storyboard.instantiateViewController(withIdentifier: "BookmarkViewController") as? BookmarkViewController else {
+                return
+            }
+            //bookmarkViewController.guide = guideArray[index]
+            self.navigationController?.pushViewController(bookmarkViewController, animated: true)
+            
+        case .sss:
+            
+            guard let faqViewController = storyboard.instantiateViewController(withIdentifier: "FaqViewController") as? FaqViewController else {
+                return
+            }
+            faqViewController.guide = guideArray[index]
+            faqViewController.model = model
+            self.navigationController?.pushViewController(faqViewController, animated: true)
+            
+        default:
+            guard let guideCategoriesViewController = storyboard.instantiateViewController(withIdentifier: "GuideCategoriesViewController") as? GuideCategoriesViewController else {
+                return
+            }
+            guideCategoriesViewController.guide = guideArray[index]
+            guideCategoriesViewController.model = model
+            self.navigationController?.pushViewController(guideCategoriesViewController, animated: true)
         }
-        
-        guideCategoriesViewController.guide = guideArray[index]
-        guideCategoriesViewController.model = model
-        
-        
-        self.navigationController?.pushViewController(guideCategoriesViewController, animated: true)
-        
-        
+
     }
     
     

@@ -57,7 +57,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pxL-li-tdx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="28.985507246376812" y="150.81521739130437"/>
+            <point key="canvasLocation" x="12" y="1185"/>
         </scene>
         <!--Guide Categories View Controller-->
         <scene sceneID="t1i-dO-7Of">
@@ -133,6 +133,120 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tb5-87-4sd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2066" y="152"/>
+        </scene>
+        <!--Bookmark View Controller-->
+        <scene sceneID="105-qY-XMQ">
+            <objects>
+                <viewController storyboardIdentifier="BookmarkViewController" id="BNd-gg-Sdq" customClass="BookmarkViewController" customModule="Online_User_Manuel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7kU-LI-l1S">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="S1H-e1-q8P">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="S1H-e1-q8P" firstAttribute="top" secondItem="ors-Oe-6XD" secondAttribute="top" id="62b-L8-X1B"/>
+                            <constraint firstItem="ors-Oe-6XD" firstAttribute="trailing" secondItem="S1H-e1-q8P" secondAttribute="trailing" id="7nl-xW-Khd"/>
+                            <constraint firstItem="ors-Oe-6XD" firstAttribute="bottom" secondItem="S1H-e1-q8P" secondAttribute="bottom" id="QNK-Oj-D8i"/>
+                            <constraint firstItem="S1H-e1-q8P" firstAttribute="leading" secondItem="ors-Oe-6XD" secondAttribute="leading" id="fIu-vt-7Ts"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ors-Oe-6XD"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W6d-Lu-Szz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="736" y="824"/>
+        </scene>
+        <!--Faq View Controller-->
+        <scene sceneID="bAA-sj-A5o">
+            <objects>
+                <viewController storyboardIdentifier="FaqViewController" id="Eja-XU-LfS" customClass="FaqViewController" customModule="Online_User_Manuel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mVa-E7-13i">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vmL-8e-xEJ">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2al-jv-ym4" firstAttribute="bottom" secondItem="vmL-8e-xEJ" secondAttribute="bottom" id="016-6N-sgX"/>
+                            <constraint firstItem="2al-jv-ym4" firstAttribute="trailing" secondItem="vmL-8e-xEJ" secondAttribute="trailing" id="FqH-fF-gfD"/>
+                            <constraint firstItem="vmL-8e-xEJ" firstAttribute="leading" secondItem="2al-jv-ym4" secondAttribute="leading" id="hsy-oO-Rz0"/>
+                            <constraint firstItem="vmL-8e-xEJ" firstAttribute="top" secondItem="2al-jv-ym4" secondAttribute="top" id="nGO-C5-WND"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2al-jv-ym4"/>
+                    </view>
+                    <connections>
+                        <outlet property="faqTableView" destination="vmL-8e-xEJ" id="QJB-5J-frd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pnn-9r-hjm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="735" y="1500"/>
+        </scene>
+        <!--Faq Answer View Controller-->
+        <scene sceneID="Bxe-BS-xIj">
+            <objects>
+                <viewController storyboardIdentifier="FaqAnswerViewController" id="ud8-KP-iYd" customClass="FaqAnswerViewController" customModule="Online_User_Manuel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EjO-qQ-QTu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogA-Iq-mDi">
+                                <rect key="frame" x="16" y="52" width="382" height="20.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cS5-bd-zFI">
+                                <rect key="frame" x="16" y="104.33333333333331" width="382" height="615.66666666666674"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cS5-bd-zFI" firstAttribute="top" secondItem="ogA-Iq-mDi" secondAttribute="bottom" constant="32" id="2Va-In-Vv7"/>
+                            <constraint firstItem="agI-CE-Fgt" firstAttribute="trailing" secondItem="cS5-bd-zFI" secondAttribute="trailing" constant="16" id="Je8-cp-53D"/>
+                            <constraint firstItem="ogA-Iq-mDi" firstAttribute="leading" secondItem="agI-CE-Fgt" secondAttribute="leading" constant="16" id="QtR-Cb-rOD"/>
+                            <constraint firstItem="agI-CE-Fgt" firstAttribute="bottom" secondItem="cS5-bd-zFI" secondAttribute="bottom" constant="16" id="ZSc-VW-iXi"/>
+                            <constraint firstItem="cS5-bd-zFI" firstAttribute="leading" secondItem="agI-CE-Fgt" secondAttribute="leading" constant="16" id="lbx-sr-H8E"/>
+                            <constraint firstItem="agI-CE-Fgt" firstAttribute="trailing" secondItem="ogA-Iq-mDi" secondAttribute="trailing" constant="16" id="vZV-Jm-R0X"/>
+                            <constraint firstItem="ogA-Iq-mDi" firstAttribute="top" secondItem="agI-CE-Fgt" secondAttribute="top" constant="32" id="yIu-X9-v4n"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="agI-CE-Fgt"/>
+                    </view>
+                    <connections>
+                        <outlet property="answerBox" destination="cS5-bd-zFI" id="DM8-mx-1mw"/>
+                        <outlet property="questionLabel" destination="ogA-Iq-mDi" id="gaI-vw-U3R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8yv-OE-0Op" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1475.3623188405797" y="1501.6304347826087"/>
+        </scene>
+        <!--Control Warning View Controller-->
+        <scene sceneID="yVe-X2-Mqg">
+            <objects>
+                <viewController storyboardIdentifier="ControlWarningViewController" id="BbK-9R-nAT" customClass="ControlWarningViewController" customModule="Online_User_Manuel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sij-hf-9WT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Q5E-jW-pQT"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hur-Wq-rO5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="727" y="2189"/>
         </scene>
     </scenes>
 </document>

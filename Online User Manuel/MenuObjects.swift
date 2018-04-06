@@ -43,6 +43,25 @@ class GuideCategory {
 
 }
 
+class FaqQuestion {
+    
+    var question: String
+    var answer: String
+    var questionID: String
+    
+    
+    required init(question: String, answer: String, questionID: String) {
+        
+        self.question = question
+        self.answer = answer
+        self.questionID = questionID
+        
+    }
+    
+}
+
+
+
 enum guideType {
     
     case kullanimkilavuzu
