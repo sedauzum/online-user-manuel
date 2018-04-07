@@ -17,7 +17,6 @@
 		364202842076318900011184 /* CategoryItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364202822076318900011184 /* CategoryItemTableViewCell.swift */; };
 		364202852076318900011184 /* CategoryItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 364202832076318900011184 /* CategoryItemTableViewCell.xib */; };
 		364202872076330300011184 /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364202862076330300011184 /* ItemDetailViewController.swift */; };
-		36744055207983C80044DA41 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36744054207983C80044DA41 /* MainViewController.swift */; };
 		3678458E207746B40078A9D3 /* BookmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3678458D207746B40078A9D3 /* BookmarkViewController.swift */; };
 		36784592207747A20078A9D3 /* ControlWarningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36784591207747A20078A9D3 /* ControlWarningViewController.swift */; };
 		36784596207750680078A9D3 /* FaqViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36784595207750680078A9D3 /* FaqViewController.swift */; };
@@ -69,7 +68,6 @@
 		364202822076318900011184 /* CategoryItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemTableViewCell.swift; sourceTree = "<group>"; };
 		364202832076318900011184 /* CategoryItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryItemTableViewCell.xib; sourceTree = "<group>"; };
 		364202862076330300011184 /* ItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
-		36744054207983C80044DA41 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		3678458D207746B40078A9D3 /* BookmarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkViewController.swift; sourceTree = "<group>"; };
 		36784591207747A20078A9D3 /* ControlWarningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlWarningViewController.swift; sourceTree = "<group>"; };
 		36784595207750680078A9D3 /* FaqViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaqViewController.swift; sourceTree = "<group>"; };
@@ -175,7 +173,6 @@
 				88D5F1542077A2D900518EFC /* TruckCollectionViewCell.swift */,
 				88D5F1552077A2D900518EFC /* TruckCollectionViewCell.xib */,
 				8899297B207218BB0023569E /* Main.storyboard */,
-				36744054207983C80044DA41 /* MainViewController.swift */,
 				367F5BC92072644200DAC705 /* Menu.storyboard */,
 				36784597207750DC0078A9D3 /* FaqAnswerViewController.swift */,
 				3678458D207746B40078A9D3 /* BookmarkViewController.swift */,
@@ -549,7 +546,6 @@
 				88092BC6207782B7004B4370 /* TruckCollectionViewController.swift in Sources */,
 				887FC63720760FBB002515CA /* VehicleTypeTableViewCell.swift in Sources */,
 				88D5F1562077A2D900518EFC /* TruckCollectionViewCell.swift in Sources */,
-				36744055207983C80044DA41 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
