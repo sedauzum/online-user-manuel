@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2E4B20132658AC7A222B002F /* Pods_Online_User_Manuel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2508A241F43C515F11275252 /* Pods_Online_User_Manuel.framework */; };
 		31BCC27C7AB8514605195DFA /* Pods_Online_User_ManuelTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B25CC5466D9C813BD6D9A722 /* Pods_Online_User_ManuelTests.framework */; };
+<<<<<<< HEAD
 		362E503A207359010008C883 /* DriversGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362E5039207359010008C883 /* DriversGuideViewController.swift */; };
 		362E503D207389360008C883 /* DriverGuideTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362E503B207389360008C883 /* DriverGuideTableViewCell.swift */; };
 		362E503E207389360008C883 /* DriverGuideTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 362E503C207389360008C883 /* DriverGuideTableViewCell.xib */; };
@@ -25,6 +26,8 @@
 		367F23A62075FE07009C1025 /* GuideCategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 367F23A42075FE07009C1025 /* GuideCategoryTableViewCell.xib */; };
 		367F23A8207611FB009C1025 /* CategoryItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367F23A7207611FB009C1025 /* CategoryItemViewController.swift */; };
 		367F5BCA2072644200DAC705 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 367F5BC92072644200DAC705 /* Menu.storyboard */; };
+=======
+>>>>>>> information
 		711AE2929A1CF0EED555B424 /* Pods_Online_User_ManuelUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3CAC9BDE01D0FC7EAC8A6F0 /* Pods_Online_User_ManuelUITests.framework */; };
 		88992978207218BB0023569E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88992977207218BB0023569E /* AppDelegate.swift */; };
 		8899297A207218BB0023569E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88992979207218BB0023569E /* ViewController.swift */; };
@@ -55,6 +58,7 @@
 
 /* Begin PBXFileReference section */
 		2508A241F43C515F11275252 /* Pods_Online_User_Manuel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Online_User_Manuel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+<<<<<<< HEAD
 		362E5039207359010008C883 /* DriversGuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriversGuideViewController.swift; sourceTree = "<group>"; };
 		362E503B207389360008C883 /* DriverGuideTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverGuideTableViewCell.swift; sourceTree = "<group>"; };
 		362E503C207389360008C883 /* DriverGuideTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DriverGuideTableViewCell.xib; sourceTree = "<group>"; };
@@ -71,6 +75,8 @@
 		367F23A42075FE07009C1025 /* GuideCategoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GuideCategoryTableViewCell.xib; sourceTree = "<group>"; };
 		367F23A7207611FB009C1025 /* CategoryItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemViewController.swift; sourceTree = "<group>"; };
 		367F5BC92072644200DAC705 /* Menu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
+=======
+>>>>>>> information
 		84876E8CFCE93F8759D227FE /* Pods-Online User Manuel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Online User Manuel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Online User Manuel/Pods-Online User Manuel.debug.xcconfig"; sourceTree = "<group>"; };
 		877E00A99384F3871788FF5C /* Pods-Online User ManuelUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Online User ManuelUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Online User ManuelUITests/Pods-Online User ManuelUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		88992974207218BB0023569E /* Online User Manuel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Online User Manuel.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -162,6 +168,7 @@
 				88992977207218BB0023569E /* AppDelegate.swift */,
 				88992979207218BB0023569E /* ViewController.swift */,
 				8899297B207218BB0023569E /* Main.storyboard */,
+<<<<<<< HEAD
 				367F5BC92072644200DAC705 /* Menu.storyboard */,
 				36784597207750DC0078A9D3 /* FaqAnswerViewController.swift */,
 				3678458D207746B40078A9D3 /* BookmarkViewController.swift */,
@@ -176,10 +183,12 @@
 				362E503B207389360008C883 /* DriverGuideTableViewCell.swift */,
 				362E503C207389360008C883 /* DriverGuideTableViewCell.xib */,
 				362E5039207359010008C883 /* DriversGuideViewController.swift */,
+=======
 				88092BC5207782B7004B4370 /* TruckCollectionViewController.swift */,
 				887FC638207612C4002515CA /* VehicleTypeViewController.swift */,
 				887FC63620760FBB002515CA /* VehicleTypeTableViewCell.swift */,
 				889929AA207368FB0023569E /* VehicleTypeTableViewCell.xib */,
+>>>>>>> information
 				8899297E207218BB0023569E /* Assets.xcassets */,
 				88992980207218BB0023569E /* LaunchScreen.storyboard */,
 				88992983207218BB0023569E /* Info.plist */,
@@ -520,11 +529,14 @@
 				364202872076330300011184 /* ItemDetailViewController.swift in Sources */,
 				36784598207750DC0078A9D3 /* FaqAnswerViewController.swift in Sources */,
 				8899297A207218BB0023569E /* ViewController.swift in Sources */,
+<<<<<<< HEAD
 				364202842076318900011184 /* CategoryItemTableViewCell.swift in Sources */,
 				362E50402073950F0008C883 /* GuideCategoriesViewController.swift in Sources */,
 				362E50422073992C0008C883 /* MenuObjects.swift in Sources */,
+=======
 				88092BC6207782B7004B4370 /* TruckCollectionViewController.swift in Sources */,
 				887FC63720760FBB002515CA /* VehicleTypeTableViewCell.swift in Sources */,
+>>>>>>> information
 				88992978207218BB0023569E /* AppDelegate.swift in Sources */,
 				362E503D207389360008C883 /* DriverGuideTableViewCell.swift in Sources */,
 				362E503A207359010008C883 /* DriversGuideViewController.swift in Sources */,
