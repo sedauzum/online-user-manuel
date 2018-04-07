@@ -17,6 +17,7 @@
 		364202842076318900011184 /* CategoryItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364202822076318900011184 /* CategoryItemTableViewCell.swift */; };
 		364202852076318900011184 /* CategoryItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 364202832076318900011184 /* CategoryItemTableViewCell.xib */; };
 		364202872076330300011184 /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364202862076330300011184 /* ItemDetailViewController.swift */; };
+		36744055207983C80044DA41 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36744054207983C80044DA41 /* MainViewController.swift */; };
 		3678458E207746B40078A9D3 /* BookmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3678458D207746B40078A9D3 /* BookmarkViewController.swift */; };
 		36784592207747A20078A9D3 /* ControlWarningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36784591207747A20078A9D3 /* ControlWarningViewController.swift */; };
 		36784596207750680078A9D3 /* FaqViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36784595207750680078A9D3 /* FaqViewController.swift */; };
@@ -30,7 +31,6 @@
 		887FC63720760FBB002515CA /* VehicleTypeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887FC63620760FBB002515CA /* VehicleTypeTableViewCell.swift */; };
 		887FC639207612C4002515CA /* VehicleTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887FC638207612C4002515CA /* VehicleTypeViewController.swift */; };
 		88992978207218BB0023569E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88992977207218BB0023569E /* AppDelegate.swift */; };
-		8899297A207218BB0023569E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88992979207218BB0023569E /* ViewController.swift */; };
 		8899297D207218BB0023569E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8899297B207218BB0023569E /* Main.storyboard */; };
 		8899297F207218BB0023569E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8899297E207218BB0023569E /* Assets.xcassets */; };
 		88992982207218BB0023569E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88992980207218BB0023569E /* LaunchScreen.storyboard */; };
@@ -69,6 +69,7 @@
 		364202822076318900011184 /* CategoryItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemTableViewCell.swift; sourceTree = "<group>"; };
 		364202832076318900011184 /* CategoryItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryItemTableViewCell.xib; sourceTree = "<group>"; };
 		364202862076330300011184 /* ItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
+		36744054207983C80044DA41 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		3678458D207746B40078A9D3 /* BookmarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkViewController.swift; sourceTree = "<group>"; };
 		36784591207747A20078A9D3 /* ControlWarningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlWarningViewController.swift; sourceTree = "<group>"; };
 		36784595207750680078A9D3 /* FaqViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaqViewController.swift; sourceTree = "<group>"; };
@@ -84,7 +85,6 @@
 		887FC638207612C4002515CA /* VehicleTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleTypeViewController.swift; sourceTree = "<group>"; };
 		88992974207218BB0023569E /* Online User Manuel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Online User Manuel.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88992977207218BB0023569E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		88992979207218BB0023569E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8899297C207218BB0023569E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8899297E207218BB0023569E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88992981207218BB0023569E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -174,8 +174,8 @@
 				88992977207218BB0023569E /* AppDelegate.swift */,
 				88D5F1542077A2D900518EFC /* TruckCollectionViewCell.swift */,
 				88D5F1552077A2D900518EFC /* TruckCollectionViewCell.xib */,
-				88992979207218BB0023569E /* ViewController.swift */,
 				8899297B207218BB0023569E /* Main.storyboard */,
+				36744054207983C80044DA41 /* MainViewController.swift */,
 				367F5BC92072644200DAC705 /* Menu.storyboard */,
 				36784597207750DC0078A9D3 /* FaqAnswerViewController.swift */,
 				3678458D207746B40078A9D3 /* BookmarkViewController.swift */,
@@ -350,7 +350,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-
 				367F5BCA2072644200DAC705 /* Menu.storyboard in Resources */,
 				889929A6207219370023569E /* .gitignore in Resources */,
 				362E503E207389360008C883 /* DriverGuideTableViewCell.xib in Resources */,
@@ -537,7 +536,6 @@
 				36784596207750680078A9D3 /* FaqViewController.swift in Sources */,
 				364202872076330300011184 /* ItemDetailViewController.swift in Sources */,
 				36784598207750DC0078A9D3 /* FaqAnswerViewController.swift in Sources */,
-				8899297A207218BB0023569E /* ViewController.swift in Sources */,
 				364202842076318900011184 /* CategoryItemTableViewCell.swift in Sources */,
 				362E50402073950F0008C883 /* GuideCategoriesViewController.swift in Sources */,
 				362E50422073992C0008C883 /* MenuObjects.swift in Sources */,
@@ -548,10 +546,10 @@
 				36784592207747A20078A9D3 /* ControlWarningViewController.swift in Sources */,
 				367F23A52075FE07009C1025 /* GuideCategoryTableViewCell.swift in Sources */,
 				887FC639207612C4002515CA /* VehicleTypeViewController.swift in Sources */,
-				8899297A207218BB0023569E /* ViewController.swift in Sources */,
 				88092BC6207782B7004B4370 /* TruckCollectionViewController.swift in Sources */,
 				887FC63720760FBB002515CA /* VehicleTypeTableViewCell.swift in Sources */,
 				88D5F1562077A2D900518EFC /* TruckCollectionViewCell.swift in Sources */,
+				36744055207983C80044DA41 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
