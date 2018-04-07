@@ -1,6 +1,11 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
 
-<<<<<<< HEAD
-=======
 /* Begin PBXBuildFile section */
 		2E4B20132658AC7A222B002F /* Pods_Online_User_Manuel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2508A241F43C515F11275252 /* Pods_Online_User_Manuel.framework */; };
 		31BCC27C7AB8514605195DFA /* Pods_Online_User_ManuelTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B25CC5466D9C813BD6D9A722 /* Pods_Online_User_ManuelTests.framework */; };
@@ -828,4 +833,3 @@
 	};
 	rootObject = 8899296C207218BB0023569E /* Project object */;
 }
->>>>>>> menu
