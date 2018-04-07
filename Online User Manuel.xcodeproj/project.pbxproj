@@ -34,6 +34,12 @@
 		8899298D207218BC0023569E /* Online_User_ManuelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8899298C207218BC0023569E /* Online_User_ManuelTests.swift */; };
 		88992998207218BC0023569E /* Online_User_ManuelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88992997207218BC0023569E /* Online_User_ManuelUITests.swift */; };
 		889929A6207219370023569E /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 889929A5207219370023569E /* .gitignore */; };
+<<<<<<< HEAD
+=======
+		889929AC207368FB0023569E /* VehicleTypeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 889929AA207368FB0023569E /* VehicleTypeTableViewCell.xib */; };
+		88D5F1562077A2D900518EFC /* TruckCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D5F1542077A2D900518EFC /* TruckCollectionViewCell.swift */; };
+		88D5F1572077A2D900518EFC /* TruckCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88D5F1552077A2D900518EFC /* TruckCollectionViewCell.xib */; };
+>>>>>>> information
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +93,12 @@
 		88992997207218BC0023569E /* Online_User_ManuelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Online_User_ManuelUITests.swift; sourceTree = "<group>"; };
 		88992999207218BC0023569E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		889929A5207219370023569E /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+<<<<<<< HEAD
+=======
+		889929AA207368FB0023569E /* VehicleTypeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VehicleTypeTableViewCell.xib; sourceTree = "<group>"; };
+		88D5F1542077A2D900518EFC /* TruckCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruckCollectionViewCell.swift; sourceTree = "<group>"; };
+		88D5F1552077A2D900518EFC /* TruckCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TruckCollectionViewCell.xib; sourceTree = "<group>"; };
+>>>>>>> information
 		A3CAC9BDE01D0FC7EAC8A6F0 /* Pods_Online_User_ManuelUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Online_User_ManuelUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A45577742A62352B20EA8CDD /* Pods-Online User ManuelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Online User ManuelTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Online User ManuelTests/Pods-Online User ManuelTests.release.xcconfig"; sourceTree = "<group>"; };
 		A5B1380F532979EDB3C0D9FE /* Pods-Online User ManuelUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Online User ManuelUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Online User ManuelUITests/Pods-Online User ManuelUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -162,6 +174,7 @@
 				88992977207218BB0023569E /* AppDelegate.swift */,
 				88992979207218BB0023569E /* ViewController.swift */,
 				8899297B207218BB0023569E /* Main.storyboard */,
+<<<<<<< HEAD
 				367F5BC92072644200DAC705 /* Menu.storyboard */,
 				36784597207750DC0078A9D3 /* FaqAnswerViewController.swift */,
 				3678458D207746B40078A9D3 /* BookmarkViewController.swift */,
@@ -176,6 +189,12 @@
 				362E503B207389360008C883 /* DriverGuideTableViewCell.swift */,
 				362E503C207389360008C883 /* DriverGuideTableViewCell.xib */,
 				362E5039207359010008C883 /* DriversGuideViewController.swift */,
+=======
+				88092BC5207782B7004B4370 /* TruckCollectionViewController.swift */,
+				887FC638207612C4002515CA /* VehicleTypeViewController.swift */,
+				887FC63620760FBB002515CA /* VehicleTypeTableViewCell.swift */,
+				889929AA207368FB0023569E /* VehicleTypeTableViewCell.xib */,
+>>>>>>> information
 				8899297E207218BB0023569E /* Assets.xcassets */,
 				88992980207218BB0023569E /* LaunchScreen.storyboard */,
 				88992983207218BB0023569E /* Info.plist */,
@@ -516,9 +535,14 @@
 				364202872076330300011184 /* ItemDetailViewController.swift in Sources */,
 				36784598207750DC0078A9D3 /* FaqAnswerViewController.swift in Sources */,
 				8899297A207218BB0023569E /* ViewController.swift in Sources */,
+<<<<<<< HEAD
 				364202842076318900011184 /* CategoryItemTableViewCell.swift in Sources */,
 				362E50402073950F0008C883 /* GuideCategoriesViewController.swift in Sources */,
 				362E50422073992C0008C883 /* MenuObjects.swift in Sources */,
+=======
+				88092BC6207782B7004B4370 /* TruckCollectionViewController.swift in Sources */,
+				887FC63720760FBB002515CA /* VehicleTypeTableViewCell.swift in Sources */,
+>>>>>>> information
 				88992978207218BB0023569E /* AppDelegate.swift in Sources */,
 				362E503D207389360008C883 /* DriverGuideTableViewCell.swift in Sources */,
 				362E503A207359010008C883 /* DriversGuideViewController.swift in Sources */,
