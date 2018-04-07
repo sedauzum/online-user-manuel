@@ -17,6 +17,7 @@
 		364202842076318900011184 /* CategoryItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364202822076318900011184 /* CategoryItemTableViewCell.swift */; };
 		364202852076318900011184 /* CategoryItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 364202832076318900011184 /* CategoryItemTableViewCell.xib */; };
 		364202872076330300011184 /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364202862076330300011184 /* ItemDetailViewController.swift */; };
+		3674404D20797AB20044DA41 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3674404C20797AB20044DA41 /* File.swift */; };
 		3678458E207746B40078A9D3 /* BookmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3678458D207746B40078A9D3 /* BookmarkViewController.swift */; };
 		36784592207747A20078A9D3 /* ControlWarningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36784591207747A20078A9D3 /* ControlWarningViewController.swift */; };
 		36784596207750680078A9D3 /* FaqViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36784595207750680078A9D3 /* FaqViewController.swift */; };
@@ -63,6 +64,7 @@
 		364202822076318900011184 /* CategoryItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemTableViewCell.swift; sourceTree = "<group>"; };
 		364202832076318900011184 /* CategoryItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryItemTableViewCell.xib; sourceTree = "<group>"; };
 		364202862076330300011184 /* ItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
+		3674404C20797AB20044DA41 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		3678458D207746B40078A9D3 /* BookmarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkViewController.swift; sourceTree = "<group>"; };
 		36784591207747A20078A9D3 /* ControlWarningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlWarningViewController.swift; sourceTree = "<group>"; };
 		36784595207750680078A9D3 /* FaqViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaqViewController.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 				364202822076318900011184 /* CategoryItemTableViewCell.swift */,
 				364202832076318900011184 /* CategoryItemTableViewCell.xib */,
 				367F23A7207611FB009C1025 /* CategoryItemViewController.swift */,
+				3674404C20797AB20044DA41 /* File.swift */,
 				362E50412073992C0008C883 /* MenuObjects.swift */,
 				364202862076330300011184 /* ItemDetailViewController.swift */,
 				36784591207747A20078A9D3 /* ControlWarningViewController.swift */,
@@ -521,6 +524,7 @@
 				362E50422073992C0008C883 /* MenuObjects.swift in Sources */,
 				88992978207218BB0023569E /* AppDelegate.swift in Sources */,
 				362E503D207389360008C883 /* DriverGuideTableViewCell.swift in Sources */,
+				3674404D20797AB20044DA41 /* File.swift in Sources */,
 				362E503A207359010008C883 /* DriversGuideViewController.swift in Sources */,
 				367F23A8207611FB009C1025 /* CategoryItemViewController.swift in Sources */,
 				36784592207747A20078A9D3 /* ControlWarningViewController.swift in Sources */,
