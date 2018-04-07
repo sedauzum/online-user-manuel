@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
         let nav1 = UINavigationController()
-        let storyboard = UIStoryboard(name: "Menu", bundle: nil)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let guideList = storyboard.instantiateViewController(withIdentifier: "DriversGuideViewController") as! DriversGuideViewController
         nav1.viewControllers = [guideList]
         self.window!.rootViewController = nav1
