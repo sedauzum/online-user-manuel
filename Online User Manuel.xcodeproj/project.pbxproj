@@ -21,7 +21,6 @@
 		8899298D207218BC0023569E /* Online_User_ManuelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8899298C207218BC0023569E /* Online_User_ManuelTests.swift */; };
 		88992998207218BC0023569E /* Online_User_ManuelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88992997207218BC0023569E /* Online_User_ManuelUITests.swift */; };
 		889929A6207219370023569E /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 889929A5207219370023569E /* .gitignore */; };
-		889929A8207359180023569E /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889929A7207359180023569E /* File.swift */; };
 		889929AC207368FB0023569E /* VehicleTypeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 889929AA207368FB0023569E /* VehicleTypeTableViewCell.xib */; };
 		88D5F1562077A2D900518EFC /* TruckCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D5F1542077A2D900518EFC /* TruckCollectionViewCell.swift */; };
 		88D5F1572077A2D900518EFC /* TruckCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88D5F1552077A2D900518EFC /* TruckCollectionViewCell.xib */; };
@@ -65,7 +64,6 @@
 		88992997207218BC0023569E /* Online_User_ManuelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Online_User_ManuelUITests.swift; sourceTree = "<group>"; };
 		88992999207218BC0023569E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		889929A5207219370023569E /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		889929A7207359180023569E /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		889929AA207368FB0023569E /* VehicleTypeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VehicleTypeTableViewCell.xib; sourceTree = "<group>"; };
 		88D5F1542077A2D900518EFC /* TruckCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruckCollectionViewCell.swift; sourceTree = "<group>"; };
 		88D5F1552077A2D900518EFC /* TruckCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TruckCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -150,7 +148,6 @@
 				887FC638207612C4002515CA /* VehicleTypeViewController.swift */,
 				887FC63620760FBB002515CA /* VehicleTypeTableViewCell.swift */,
 				889929AA207368FB0023569E /* VehicleTypeTableViewCell.xib */,
-				889929A7207359180023569E /* File.swift */,
 				8899297E207218BB0023569E /* Assets.xcassets */,
 				88992980207218BB0023569E /* LaunchScreen.storyboard */,
 				88992983207218BB0023569E /* Info.plist */,
@@ -485,7 +482,6 @@
 				887FC639207612C4002515CA /* VehicleTypeViewController.swift in Sources */,
 				8899297A207218BB0023569E /* ViewController.swift in Sources */,
 				88092BC6207782B7004B4370 /* TruckCollectionViewController.swift in Sources */,
-				889929A8207359180023569E /* File.swift in Sources */,
 				887FC63720760FBB002515CA /* VehicleTypeTableViewCell.swift in Sources */,
 				88992978207218BB0023569E /* AppDelegate.swift in Sources */,
 				88D5F1562077A2D900518EFC /* TruckCollectionViewCell.swift in Sources */,
