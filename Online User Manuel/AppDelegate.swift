@@ -27,6 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.makeKeyAndVisible()
         
         return true
+        
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
