@@ -5,7 +5,6 @@
 //  Created by seda üzüm on 2.04.2018.
 //  Copyright © 2018 uzum & asıliskender. All rights reserved.
 //
-
 import UIKit
 
 @UIApplicationMain
@@ -15,6 +14,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        let nav1 = UINavigationController() //sayfalar arası geçiş yapmamızı sağladı
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let vehicleTypeVC = storyboard.instantiateViewController(withIdentifier: "VehicleTypeViewController") as! VehicleTypeViewController
+        
+        nav1.viewControllers = [vehicleTypeVC] //özelliklerini kullanabilmek için downcast ettik.
+        self.window!.rootViewController = nav1 //en başta kullanılacak view controller olduğu için tanımla
+        self.window?.makeKeyAndVisible()
+        
         return true
     }
 
@@ -42,4 +53,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 }
-
