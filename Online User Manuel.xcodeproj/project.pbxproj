@@ -350,6 +350,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+
 				367F5BCA2072644200DAC705 /* Menu.storyboard in Resources */,
 				889929A6207219370023569E /* .gitignore in Resources */,
 				362E503E207389360008C883 /* DriverGuideTableViewCell.xib in Resources */,
@@ -532,7 +533,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-
 				3678458E207746B40078A9D3 /* BookmarkViewController.swift in Sources */,
 				36784596207750680078A9D3 /* FaqViewController.swift in Sources */,
 				364202872076330300011184 /* ItemDetailViewController.swift in Sources */,
@@ -551,9 +551,7 @@
 				8899297A207218BB0023569E /* ViewController.swift in Sources */,
 				88092BC6207782B7004B4370 /* TruckCollectionViewController.swift in Sources */,
 				887FC63720760FBB002515CA /* VehicleTypeTableViewCell.swift in Sources */,
-				88992978207218BB0023569E /* AppDelegate.swift in Sources */,
 				88D5F1562077A2D900518EFC /* TruckCollectionViewCell.swift in Sources */,
-
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
