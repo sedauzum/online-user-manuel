@@ -16,6 +16,7 @@ class TruckCollectionViewController: UIViewController, UICollectionViewDataSourc
     var vehicle: VehicleType!
     
     var vehicleList: [VehicleModel]!
+    
     var passengerCarList: [VehicleModel]!
     var lcvList: [VehicleModel]!
     var hcvList: [VehicleModel]!
@@ -55,32 +56,33 @@ class TruckCollectionViewController: UIViewController, UICollectionViewDataSourc
    
     fileprivate func preparePassengerCarList(){
         
-        let fiesta = VehicleModel(name: "Yeni Fiesta", image: UIImage(named: "fordfocuswhite")!)
-        let focus = VehicleModel(name: "Focus", image: UIImage(named: "fordfocuswhite")!)
-        let mondeo = VehicleModel(name: "Mondeo", image: UIImage(named: "fordfocuswhite")!)
-        let ecosport = VehicleModel(name: "Yeni Ecosport", image: UIImage(named: "fordfocuswhite")!)
-        let kuga = VehicleModel(name: "Yeni Kuga", image: UIImage(named: "fordfocuswhite")!)
-        let edge = VehicleModel(name: "Edge", image: UIImage(named: "fordfocuswhite")!)
-        let cMax = VehicleModel(name: "C-Max", image: UIImage(named: "fordfocuswhite")!)
-        let sMax = VehicleModel(name: "S-Max", image: UIImage(named: "fordfocuswhite")!)
-        let galaxy = VehicleModel(name: "Galaxy", image: UIImage(named: "fordfocuswhite")!)
-        let mustang = VehicleModel(name: "Yeni Mustang", image: UIImage(named: "fordfocuswhite")!)
+        let yeniFocus = VehicleModel(name: "Yeni Focus", image: UIImage(named: "yenifocus")!,poster: UIImage(named: "posterYeniFocus")!)
+        let fiesta = VehicleModel(name: "Yeni Fiesta", image: UIImage(named: "fiesta")!,poster: UIImage(named: "posterYeniFiesta")!)
+        let focus = VehicleModel(name: "Focus", image: UIImage(named: "focus")!,poster: UIImage(named: "posterFocus")!)
+        let mondeo = VehicleModel(name: "Mondeo", image: UIImage(named: "mondeo")!,poster: UIImage(named: "posterMondeo")!)
+        let ecosport = VehicleModel(name: "Yeni Ecosport", image: UIImage(named: "ecosport")!,poster: UIImage(named: "posterEcosport")!)
+        let kuga = VehicleModel(name: "Yeni Kuga", image: UIImage(named: "kuga")!,poster: UIImage(named: "posterKuga")!)
+        let edge = VehicleModel(name: "Edge", image: UIImage(named: "edge")!,poster: UIImage(named: "posterEdge")!)
+        let cMax = VehicleModel(name: "C-Max", image: UIImage(named: "cmax")!,poster: UIImage(named: "posterCmax")!)
+        let sMax = VehicleModel(name: "S-Max", image: UIImage(named: "smax")!,poster: UIImage(named: "posterSmax")!)
+        let galaxy = VehicleModel(name: "Galaxy", image: UIImage(named: "galaxy")!,poster: UIImage(named: "posterGalaxy")!)
+        let mustang = VehicleModel(name: "Yeni Mustang", image: UIImage(named: "mustang")!,poster: UIImage(named: "posterMustang")!)
         
-        passengerCarList = [fiesta,focus,mondeo,ecosport,kuga,edge,cMax,sMax,galaxy,mustang]
+        passengerCarList = [yeniFocus,fiesta,focus,mondeo,ecosport,kuga,edge,cMax,sMax,galaxy,mustang]
         vehicleList = passengerCarList
     }
     
     fileprivate func prepareLcvList(){
         
-        let tourneoCourier = VehicleModel(name: "Tourneo Courier", image: UIImage(named: "fordtourneocustom")!)
-        let tourneoConnect = VehicleModel(name: "Tourneo Connect", image: UIImage(named: "fordtourneocustom")!)
-        let tourneoCustom = VehicleModel(name: "Tourneo Custom", image: UIImage(named: "fordtourneocustom")!)
-        let transitCourier = VehicleModel(name: "Transit Courier", image: UIImage(named: "fordtourneocustom")!)
-        let transitConnect = VehicleModel(name: "Transit Connect", image: UIImage(named: "fordtourneocustom")!)
-        let transitCustom = VehicleModel(name: "Transit Custom", image: UIImage(named: "fordtourneocustom")!)
-        let transitVan = VehicleModel(name: "Transit Van", image: UIImage(named: "fordtourneocustom")!)
-        let transitKamyonet = VehicleModel(name: "Transit Kamyonet", image: UIImage(named: "fordtourneocustom")!)
-        let ranger = VehicleModel(name: "Ranger", image: UIImage(named: "fordtourneocustom")!)
+        let tourneoCourier = VehicleModel(name: "Tourneo Courier", image: UIImage(named: "tourneoCourier")!,poster: UIImage(named: "posterTourneoCourier")!)
+        let tourneoConnect = VehicleModel(name: "Tourneo Connect", image: UIImage(named: "tourneoConnect")!,poster: UIImage(named: "posterTourneoConnect")!)
+        let tourneoCustom = VehicleModel(name: "Tourneo Custom", image: UIImage(named: "tourneoCustom")!,poster: UIImage(named: "posterTourneoCustom")!)
+        let transitCourier = VehicleModel(name: "Transit Courier", image: UIImage(named: "transitCourier")!,poster: UIImage(named: "posterTransitCourier")!)
+        let transitConnect = VehicleModel(name: "Transit Connect", image: UIImage(named: "transitConnect")!,poster: UIImage(named: "posterTransitConnect")!)
+        let transitCustom = VehicleModel(name: "Transit Custom", image: UIImage(named: "transitCustom")!,poster: UIImage(named: "posterTransitCustom")!)
+        let transitVan = VehicleModel(name: "Transit Van", image: UIImage(named: "transitVan")!,poster: UIImage(named: "posterTransitVan")!)
+        let transitKamyonet = VehicleModel(name: "Transit Kamyonet", image: UIImage(named: "transitKamyonet")!,poster: UIImage(named: "posterTransitKamyonet")!)
+        let ranger = VehicleModel(name: "Ranger", image: UIImage(named: "ranger")!,poster: UIImage(named: "posterRanger")!)
 
         lcvList = [tourneoCourier,tourneoConnect,tourneoCustom,transitCourier,transitConnect,transitCustom,transitVan,transitKamyonet,ranger]
         vehicleList = lcvList
@@ -90,16 +92,18 @@ class TruckCollectionViewController: UIViewController, UICollectionViewDataSourc
     
     fileprivate func prepareHcvList() {
         
-        let tractor = VehicleModel(name: "Tractor", image: UIImage(named: "fordcargotractor")!)
-        let roadTruck = VehicleModel(name:"Road Truck", image: UIImage(named: "fordcargoroadtruck")!)
-        let construction = VehicleModel(name: "Construction", image: UIImage(named: "fordcargoconstruction")!)
+        let tractor = VehicleModel(name: "Çekici Serisi", image: UIImage(named: "fordcargotractor")!,poster: UIImage(named: "posterCekici")!)
+        let roadTruck = VehicleModel(name:"Yol Serisi", image: UIImage(named: "fordcargoroadtruck")!,poster: UIImage(named: "posterYol")!)
+        let construction = VehicleModel(name: "Inşaat Serisi", image: UIImage(named: "fordcargoconstruction")!,poster: UIImage(named: "posterInsaat")!)
         
         hcvList = [tractor, roadTruck, construction]
         vehicleList = hcvList
     }
 
     fileprivate func prepareNavigationItem() {
-        navigationItem.title = vehicle.name
+        navigationItem.title = vehicle.name + " Araç"
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        
     }
 
     func showDetail(_ index: Int) {
@@ -108,6 +112,8 @@ class TruckCollectionViewController: UIViewController, UICollectionViewDataSourc
             return
         }
         
+        driverGuideViewController.type = vehicle
+        driverGuideViewController.model = vehicleList[index]
         self.navigationController?.pushViewController(driverGuideViewController, animated: true)
     }
 

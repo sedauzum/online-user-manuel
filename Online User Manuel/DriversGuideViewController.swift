@@ -16,8 +16,10 @@ class DriversGuideViewController: UIViewController {
     @IBOutlet weak var carGuideTableView: UITableView!
     
     var guideArray: [DriverGuide] = []
-    var model = "Ford Truck"
-    var type = "Kamyonlar"
+    var model : VehicleModel!
+    var type : VehicleType!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +33,7 @@ class DriversGuideViewController: UIViewController {
     
     fileprivate func prepareNavigationBar(){
         
-        navigationItem.setTitle(title: type, subtitle: model)
+        navigationItem.setTitle(title: type.name + " Araç", subtitle: model.name)
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         
     }
@@ -57,7 +59,7 @@ class DriversGuideViewController: UIViewController {
     
     fileprivate func prepareLabel(){
         
-        carLabel.text = "Ford Truck"
+        carLabel.text = model.name
         carLabel.textColor = . white
         carLabel.font = UIFont.systemFont(ofSize: 40.0)
  
@@ -68,7 +70,7 @@ class DriversGuideViewController: UIViewController {
         carImageView.contentMode = .scaleAspectFill
         carImageView.clipsToBounds = true
         
-        carImageView.image = UIImage(named: "fordtruck")
+        carImageView.image = model.poster
 
     }
     

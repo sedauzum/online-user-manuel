@@ -52,7 +52,8 @@ class VehicleTypeViewController: UIViewController {
     
     fileprivate func prepareNavigationItem() {
         
-        //navigationItem.title = "Vehicle Type"
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+
     }
 
 }

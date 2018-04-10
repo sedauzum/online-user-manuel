@@ -13,7 +13,7 @@ class GuideCategoriesViewController: UIViewController {
     @IBOutlet weak var guideCategoryTableView: UITableView!
     
     var guide: DriverGuide!
-    var model: String = ""
+    var model: VehicleModel!
     
     var categoryArray: [GuideCategory] = []
     
@@ -27,7 +27,7 @@ class GuideCategoriesViewController: UIViewController {
     
     fileprivate func prepareNavigationBar(){
         
-        navigationItem.setTitle(title: model, subtitle: guide.title)
+        navigationItem.setTitle(title: model.name   , subtitle: guide.title)
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
 
     }

@@ -27,10 +27,17 @@ struct VehicleModel {
     
     var name: String
     var image: UIImage
+    var poster: UIImage?
     
     init(name: String, image: UIImage) {
         self.name = name
         self.image = image
+    }
+    
+    init(name: String, image: UIImage, poster: UIImage) {
+        self.name = name
+        self.image = image
+        self.poster = poster
     }
 }
 

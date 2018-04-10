@@ -13,7 +13,7 @@ class FaqViewController: UIViewController {
     var faqArray: [FaqQuestion] = []
     
     var guide: DriverGuide!
-    var model: String = ""
+    var model: VehicleModel!
 
     @IBOutlet weak var faqTableView: UITableView!
     
