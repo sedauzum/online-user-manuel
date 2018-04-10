@@ -30,16 +30,17 @@ class VehicleTypeViewController: UIViewController {
             return
         }
         
-        truckCollectionViewController.type = vehicleTypeList[index]
+        truckCollectionViewController.vehicle = vehicleTypeList[index]
         self.navigationController?.pushViewController(truckCollectionViewController, animated: true)
     }
     
     fileprivate func prepareVehicleList() {
-        let binekArac = VehicleType(name: "Binek", image: UIImage(named: "fordfocuswhite")!)
-        let ticariArac = VehicleType(name:"Ticari", image: UIImage(named: "fordtourneocustom")! )
+        let binekArac = VehicleType(name: "Binek", image: UIImage(named: "fordfocuswhite")!, type: .binek)
+        let ticariArac = VehicleType(name:"Ticari", image: UIImage(named: "fordtourneocustom")!,type: .ticari)
         let kamyonImg = UIImage(named: "fordcargo")!
-        let kamyonlar = VehicleType(name: "Ağır Ticari", image: UIImage(cgImage: kamyonImg.cgImage!, scale: 1.0, orientation: UIImageOrientation.upMirrored ))
-        vehicleTypeList = [binekArac,ticariArac,kamyonlar]
+        let agirTicari = VehicleType(name: "Ağır Ticari", image: UIImage(cgImage: kamyonImg.cgImage!, scale: 1.0, orientation: UIImageOrientation.upMirrored ),type: .agirTicari)
+        
+        vehicleTypeList = [binekArac,ticariArac,agirTicari]
         
     }
     
@@ -51,7 +52,7 @@ class VehicleTypeViewController: UIViewController {
     
     fileprivate func prepareNavigationItem() {
         
-        navigationItem.title = "Vehicle Type"
+        //navigationItem.title = "Vehicle Type"
     }
 
 }

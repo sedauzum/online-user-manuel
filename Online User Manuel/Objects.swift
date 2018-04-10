@@ -14,10 +14,12 @@ struct VehicleType {
     
     var name: String
     var image: UIImage
+    var type: vehicleType
     
-    init(name: String, image: UIImage) {
+    init(name: String, image: UIImage, type: vehicleType) {
         self.name = name
         self.image = image
+        self.type = type
     }
 }
 
@@ -83,6 +85,11 @@ struct FaqQuestion {
     
 }
 
+enum vehicleType {
+    case binek
+    case ticari
+    case agirTicari
+}
 
 
 enum guideType {

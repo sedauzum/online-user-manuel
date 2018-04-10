@@ -13,8 +13,9 @@ class TruckCollectionViewController: UIViewController, UICollectionViewDataSourc
 
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var type: VehicleType!
+    var vehicle: VehicleType!
     
+    var vehicleList: [VehicleModel]!
     var passengerCarList: [VehicleModel]!
     var lcvList: [VehicleModel]!
     var hcvList: [VehicleModel]!
@@ -22,25 +23,33 @@ class TruckCollectionViewController: UIViewController, UICollectionViewDataSourc
     override func viewDidLoad() {
         super.viewDidLoad()
         prepareNavigationItem()
+        prepareCollectionView()
         prepareVehicleList()
-        
+    }
+    
+    fileprivate func prepareCollectionView(){
         self.collectionView.register(UINib(nibName:"TruckCollectionViewCell", bundle:nil), forCellWithReuseIdentifier: "TruckCollectionViewCell")
         
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
-
+        
     }
     
     
     fileprivate func prepareVehicleList(){
 
-        if type.name == "Binek" {
+        switch vehicle.type {
+            
+        case .binek :
             preparePassengerCarList()
-        } else if type.name == "Ticari"{
+        case .ticari:
             prepareLcvList()
-        } else if type.name == "Ağır Ticari"{
+        case .agirTicari:
             prepareHcvList()
         }
+        
+        
+
     }
     
    
@@ -58,7 +67,7 @@ class TruckCollectionViewController: UIViewController, UICollectionViewDataSourc
         let mustang = VehicleModel(name: "Yeni Mustang", image: UIImage(named: "fordfocuswhite")!)
         
         passengerCarList = [fiesta,focus,mondeo,ecosport,kuga,edge,cMax,sMax,galaxy,mustang]
-
+        vehicleList = passengerCarList
     }
     
     fileprivate func prepareLcvList(){
@@ -74,6 +83,7 @@ class TruckCollectionViewController: UIViewController, UICollectionViewDataSourc
         let ranger = VehicleModel(name: "Ranger", image: UIImage(named: "fordtourneocustom")!)
 
         lcvList = [tourneoCourier,tourneoConnect,tourneoCustom,transitCourier,transitConnect,transitCustom,transitVan,transitKamyonet,ranger]
+        vehicleList = lcvList
         
     }
     
@@ -85,11 +95,11 @@ class TruckCollectionViewController: UIViewController, UICollectionViewDataSourc
         let construction = VehicleModel(name: "Construction", image: UIImage(named: "fordcargoconstruction")!)
         
         hcvList = [tractor, roadTruck, construction]
-        
+        vehicleList = hcvList
     }
 
     fileprivate func prepareNavigationItem() {
-        navigationItem.title = "Vehicle Type"
+        navigationItem.title = vehicle.name
     }
 
     func showDetail(_ index: Int) {
@@ -106,14 +116,7 @@ class TruckCollectionViewController: UIViewController, UICollectionViewDataSourc
     }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if type.name == "Binek" {
-            return passengerCarList.count
-        } else if type.name == "Ticari"{
-           return lcvList.count
-        } else if type.name == "Ağır Ticari"{
-            return hcvList.count
-        }
-        return 0
+        return vehicleList.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -121,16 +124,9 @@ class TruckCollectionViewController: UIViewController, UICollectionViewDataSourc
             return UICollectionViewCell()
         }
         
-        if type.name == "Binek" {
-            cell.truckCollectionCellLabel.text = passengerCarList[indexPath.row].name
-            cell.truckCollectionCellImageView.image = passengerCarList[indexPath.row].image
-        } else if type.name == "Ticari"{
-            cell.truckCollectionCellLabel.text = lcvList[indexPath.row].name
-            cell.truckCollectionCellImageView.image = lcvList[indexPath.row].image
-        } else if type.name == "Ağır Ticari"{
-            cell.truckCollectionCellLabel.text = hcvList[indexPath.row].name
-            cell.truckCollectionCellImageView.image = hcvList[indexPath.row].image
-    }
+        cell.truckCollectionCellLabel.text = vehicleList[indexPath.row].name
+        cell.truckCollectionCellImageView.image = vehicleList[indexPath.row].image
+
         
 
     
