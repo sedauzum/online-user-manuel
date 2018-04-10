@@ -9,14 +9,37 @@
 import Foundation
 import UIKit
 
-class DriverGuide {
+
+struct VehicleType {
+    
+    var name: String
+    var image: UIImage
+    
+    init(name: String, image: UIImage) {
+        self.name = name
+        self.image = image
+    }
+}
+
+struct VehicleModel {
+    
+    var name: String
+    var image: UIImage
+    
+    init(name: String, image: UIImage) {
+        self.name = name
+        self.image = image
+    }
+}
+
+struct DriverGuide {
     
     var title: String
     var imageView: UIImage
     var type: guideType
     
     
-    required init(title: String, imageView: UIImage, type: guideType) {
+    init(title: String, imageView: UIImage, type: guideType) {
         
         self.title = title
         self.imageView = imageView
@@ -26,14 +49,14 @@ class DriverGuide {
    
 }
 
-class GuideCategory {
+struct GuideCategory {
     
     var title: String
     var imageView: UIImage
     var description: String
     
     
-    required init(title: String, imageView: UIImage, description: String) {
+    init(title: String, imageView: UIImage, description: String) {
         
         self.title = title
         self.imageView = imageView
@@ -43,14 +66,14 @@ class GuideCategory {
 
 }
 
-class FaqQuestion {
+struct FaqQuestion {
     
     var question: String
     var answer: String
     var questionID: String
     
     
-    required init(question: String, answer: String, questionID: String) {
+    init(question: String, answer: String, questionID: String) {
         
         self.question = question
         self.answer = answer

@@ -8,16 +8,6 @@
 
 import UIKit
 
-struct VehicleType {
-    
-    var name: String
-    var image: UIImage
-    
-    init(name: String, image: UIImage) {
-        self.name = name
-        self.image = image
-    }
-}
 
 class VehicleTypeViewController: UIViewController {
     
@@ -39,15 +29,16 @@ class VehicleTypeViewController: UIViewController {
         guard let truckCollectionViewController = storyboard.instantiateViewController(withIdentifier: "TruckCollectionViewController") as? TruckCollectionViewController else {
             return
         }
-        //movieDet.myMovie = movieArray[index]
+        
+        truckCollectionViewController.type = vehicleTypeList[index]
         self.navigationController?.pushViewController(truckCollectionViewController, animated: true)
     }
     
     fileprivate func prepareVehicleList() {
-        let binekArac = VehicleType(name: "Binek Araç", image: UIImage(named: "fordfocuswhite")!)
-        let ticariArac = VehicleType(name:"Ticari Araç", image: UIImage(named: "fordtourneocustom")! )
+        let binekArac = VehicleType(name: "Binek", image: UIImage(named: "fordfocuswhite")!)
+        let ticariArac = VehicleType(name:"Ticari", image: UIImage(named: "fordtourneocustom")! )
         let kamyonImg = UIImage(named: "fordcargo")!
-        let kamyonlar = VehicleType(name: "Kamyonlar", image: UIImage(cgImage: kamyonImg.cgImage!, scale: 1.0, orientation: UIImageOrientation.upMirrored ))
+        let kamyonlar = VehicleType(name: "Ağır Ticari", image: UIImage(cgImage: kamyonImg.cgImage!, scale: 1.0, orientation: UIImageOrientation.upMirrored ))
         vehicleTypeList = [binekArac,ticariArac,kamyonlar]
         
     }

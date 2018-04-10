@@ -8,50 +8,87 @@
 
 import UIKit
 
-struct TruckType {
-    
-    var name: String
-    var image: UIImage
-    
-    init(name: String, image: UIImage) {
-        self.name = name
-        self.image = image
-    }
-}
 
 class TruckCollectionViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
 
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var truckTypeList: [TruckType]!
+    var type: VehicleType!
+    
+    var passengerCarList: [VehicleModel]!
+    var lcvList: [VehicleModel]!
+    var hcvList: [VehicleModel]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         prepareNavigationItem()
-        prepareTruckTypeList()
+        prepareVehicleList()
         
         self.collectionView.register(UINib(nibName:"TruckCollectionViewCell", bundle:nil), forCellWithReuseIdentifier: "TruckCollectionViewCell")
         
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
 
-        // Do any additional setup after loading the view.
     }
     
-    fileprivate func prepareTruckTypeList() {
+    
+    fileprivate func prepareVehicleList(){
+
+        if type.name == "Binek" {
+            preparePassengerCarList()
+        } else if type.name == "Ticari"{
+            prepareLcvList()
+        } else if type.name == "Ağır Ticari"{
+            prepareHcvList()
+        }
+    }
+    
+   
+    fileprivate func preparePassengerCarList(){
         
-        let tractor = TruckType(name: "Tractor", image: UIImage(named: "fordcargotractor")!)
+        let fiesta = VehicleModel(name: "Yeni Fiesta", image: UIImage(named: "fordfocuswhite")!)
+        let focus = VehicleModel(name: "Focus", image: UIImage(named: "fordfocuswhite")!)
+        let mondeo = VehicleModel(name: "Mondeo", image: UIImage(named: "fordfocuswhite")!)
+        let ecosport = VehicleModel(name: "Yeni Ecosport", image: UIImage(named: "fordfocuswhite")!)
+        let kuga = VehicleModel(name: "Yeni Kuga", image: UIImage(named: "fordfocuswhite")!)
+        let edge = VehicleModel(name: "Edge", image: UIImage(named: "fordfocuswhite")!)
+        let cMax = VehicleModel(name: "C-Max", image: UIImage(named: "fordfocuswhite")!)
+        let sMax = VehicleModel(name: "S-Max", image: UIImage(named: "fordfocuswhite")!)
+        let galaxy = VehicleModel(name: "Galaxy", image: UIImage(named: "fordfocuswhite")!)
+        let mustang = VehicleModel(name: "Yeni Mustang", image: UIImage(named: "fordfocuswhite")!)
         
-        let roadTruck = TruckType(name:"Road Truck", image: UIImage(named: "fordcargoroadtruck")!)
+        passengerCarList = [fiesta,focus,mondeo,ecosport,kuga,edge,cMax,sMax,galaxy,mustang]
+
+    }
+    
+    fileprivate func prepareLcvList(){
         
-        let construction = TruckType(name: "Construction", image: UIImage(named: "fordcargoconstruction")!)
+        let tourneoCourier = VehicleModel(name: "Tourneo Courier", image: UIImage(named: "fordtourneocustom")!)
+        let tourneoConnect = VehicleModel(name: "Tourneo Connect", image: UIImage(named: "fordtourneocustom")!)
+        let tourneoCustom = VehicleModel(name: "Tourneo Custom", image: UIImage(named: "fordtourneocustom")!)
+        let transitCourier = VehicleModel(name: "Transit Courier", image: UIImage(named: "fordtourneocustom")!)
+        let transitConnect = VehicleModel(name: "Transit Connect", image: UIImage(named: "fordtourneocustom")!)
+        let transitCustom = VehicleModel(name: "Transit Custom", image: UIImage(named: "fordtourneocustom")!)
+        let transitVan = VehicleModel(name: "Transit Van", image: UIImage(named: "fordtourneocustom")!)
+        let transitKamyonet = VehicleModel(name: "Transit Kamyonet", image: UIImage(named: "fordtourneocustom")!)
+        let ranger = VehicleModel(name: "Ranger", image: UIImage(named: "fordtourneocustom")!)
+
+        lcvList = [tourneoCourier,tourneoConnect,tourneoCustom,transitCourier,transitConnect,transitCustom,transitVan,transitKamyonet,ranger]
         
-        truckTypeList = [tractor, roadTruck, construction]
+    }
+    
+    
+    fileprivate func prepareHcvList() {
+        
+        let tractor = VehicleModel(name: "Tractor", image: UIImage(named: "fordcargotractor")!)
+        let roadTruck = VehicleModel(name:"Road Truck", image: UIImage(named: "fordcargoroadtruck")!)
+        let construction = VehicleModel(name: "Construction", image: UIImage(named: "fordcargoconstruction")!)
+        
+        hcvList = [tractor, roadTruck, construction]
         
     }
 
     fileprivate func prepareNavigationItem() {
-        
         navigationItem.title = "Vehicle Type"
     }
 
@@ -60,6 +97,7 @@ class TruckCollectionViewController: UIViewController, UICollectionViewDataSourc
         guard let driverGuideViewController = storyboard.instantiateViewController(withIdentifier: "DriversGuideViewController") as? DriversGuideViewController else {
             return
         }
+        
         self.navigationController?.pushViewController(driverGuideViewController, animated: true)
     }
 
@@ -68,7 +106,14 @@ class TruckCollectionViewController: UIViewController, UICollectionViewDataSourc
     }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return truckTypeList.count
+        if type.name == "Binek" {
+            return passengerCarList.count
+        } else if type.name == "Ticari"{
+           return lcvList.count
+        } else if type.name == "Ağır Ticari"{
+            return hcvList.count
+        }
+        return 0
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -76,8 +121,18 @@ class TruckCollectionViewController: UIViewController, UICollectionViewDataSourc
             return UICollectionViewCell()
         }
         
-        cell.truckCollectionCellLabel.text = truckTypeList[indexPath.row].name
-        cell.truckCollectionCellImageView.image = truckTypeList[indexPath.row].image
+        if type.name == "Binek" {
+            cell.truckCollectionCellLabel.text = passengerCarList[indexPath.row].name
+            cell.truckCollectionCellImageView.image = passengerCarList[indexPath.row].image
+        } else if type.name == "Ticari"{
+            cell.truckCollectionCellLabel.text = lcvList[indexPath.row].name
+            cell.truckCollectionCellImageView.image = lcvList[indexPath.row].image
+        } else if type.name == "Ağır Ticari"{
+            cell.truckCollectionCellLabel.text = hcvList[indexPath.row].name
+            cell.truckCollectionCellImageView.image = hcvList[indexPath.row].image
+    }
+        
+
     
         return cell
     }
@@ -98,3 +153,4 @@ class TruckCollectionViewController: UIViewController, UICollectionViewDataSourc
     
 
 }
+

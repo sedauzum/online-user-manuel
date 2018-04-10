@@ -13,7 +13,7 @@
 		362E503D207389360008C883 /* DriverGuideTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362E503B207389360008C883 /* DriverGuideTableViewCell.swift */; };
 		362E503E207389360008C883 /* DriverGuideTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 362E503C207389360008C883 /* DriverGuideTableViewCell.xib */; };
 		362E50402073950F0008C883 /* GuideCategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362E503F2073950F0008C883 /* GuideCategoriesViewController.swift */; };
-		362E50422073992C0008C883 /* MenuObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362E50412073992C0008C883 /* MenuObjects.swift */; };
+		362E50422073992C0008C883 /* Objects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362E50412073992C0008C883 /* Objects.swift */; };
 		364202842076318900011184 /* CategoryItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364202822076318900011184 /* CategoryItemTableViewCell.swift */; };
 		364202852076318900011184 /* CategoryItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 364202832076318900011184 /* CategoryItemTableViewCell.xib */; };
 		364202872076330300011184 /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364202862076330300011184 /* ItemDetailViewController.swift */; };
@@ -64,7 +64,7 @@
 		362E503B207389360008C883 /* DriverGuideTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverGuideTableViewCell.swift; sourceTree = "<group>"; };
 		362E503C207389360008C883 /* DriverGuideTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DriverGuideTableViewCell.xib; sourceTree = "<group>"; };
 		362E503F2073950F0008C883 /* GuideCategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideCategoriesViewController.swift; sourceTree = "<group>"; };
-		362E50412073992C0008C883 /* MenuObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuObjects.swift; sourceTree = "<group>"; };
+		362E50412073992C0008C883 /* Objects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Objects.swift; sourceTree = "<group>"; };
 		364202822076318900011184 /* CategoryItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemTableViewCell.swift; sourceTree = "<group>"; };
 		364202832076318900011184 /* CategoryItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryItemTableViewCell.xib; sourceTree = "<group>"; };
 		364202862076330300011184 /* ItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
@@ -180,7 +180,7 @@
 				364202822076318900011184 /* CategoryItemTableViewCell.swift */,
 				364202832076318900011184 /* CategoryItemTableViewCell.xib */,
 				367F23A7207611FB009C1025 /* CategoryItemViewController.swift */,
-				362E50412073992C0008C883 /* MenuObjects.swift */,
+				362E50412073992C0008C883 /* Objects.swift */,
 				364202862076330300011184 /* ItemDetailViewController.swift */,
 				36784591207747A20078A9D3 /* ControlWarningViewController.swift */,
 				362E503F2073950F0008C883 /* GuideCategoriesViewController.swift */,
@@ -535,7 +535,7 @@
 				36784598207750DC0078A9D3 /* FaqAnswerViewController.swift in Sources */,
 				364202842076318900011184 /* CategoryItemTableViewCell.swift in Sources */,
 				362E50402073950F0008C883 /* GuideCategoriesViewController.swift in Sources */,
-				362E50422073992C0008C883 /* MenuObjects.swift in Sources */,
+				362E50422073992C0008C883 /* Objects.swift in Sources */,
 				88992978207218BB0023569E /* AppDelegate.swift in Sources */,
 				362E503D207389360008C883 /* DriverGuideTableViewCell.swift in Sources */,
 				362E503A207359010008C883 /* DriversGuideViewController.swift in Sources */,
