@@ -27,7 +27,7 @@ class TruckCollectionViewCell: UICollectionViewCell {
     }
     fileprivate func prepareTruckCollectionCellLabel() {
         truckCollectionCellLabel.textColor = .black
-        truckCollectionCellLabel.font =  UIFont.boldSystemFont(ofSize: 24)
+        truckCollectionCellLabel.font =  UIFont.boldSystemFont(ofSize: 20)
     }
     
     

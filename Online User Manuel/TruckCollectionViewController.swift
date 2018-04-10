@@ -55,7 +55,13 @@ class TruckCollectionViewController: UIViewController, UICollectionViewDataSourc
         navigationItem.title = "Vehicle Type"
     }
 
-    // MARK: UICollectionViewDataSource
+    func showDetail(_ index: Int) {
+        let storyboard  = UIStoryboard(name:"Menu", bundle:nil)
+        guard let driverGuideViewController = storyboard.instantiateViewController(withIdentifier: "DriversGuideViewController") as? DriversGuideViewController else {
+            return
+        }
+        self.navigationController?.pushViewController(driverGuideViewController, animated: true)
+    }
 
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
@@ -81,5 +87,14 @@ class TruckCollectionViewController: UIViewController, UICollectionViewDataSourc
         return CGSize(width: view.bounds.size.width/2 - 16 , height: view.bounds.size.width/2 - 16)
         
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let index = indexPath.row
+        showDetail(index)
+        collectionView.deselectItem(at: indexPath, animated: true)
+        
+    }
+    
 
 }
