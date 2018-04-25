@@ -47,7 +47,6 @@ struct DriverGuide {
     var imageView: UIImage
     var type: guideType
     
-    
     init(title: String, imageView: UIImage, type: guideType) {
         
         self.title = title

@@ -18,6 +18,7 @@ class DriversGuideViewController: UIViewController {
     var guideArray: [DriverGuide] = []
     var model : VehicleModel!
     var type : VehicleType!
+
     
     
     
